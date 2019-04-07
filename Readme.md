@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Victor Banariuc](https://up.htmlacademy.ru/adaptive/16/user/828987).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Сорокин](https://htmlacademy.ru/profile/osorokin).
 
 ---
 
