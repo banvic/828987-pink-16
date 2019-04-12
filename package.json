@@ -2,18 +2,16 @@
   "name": "pink-16",
   "version": "16.0.0",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
     "gulp": "4.0.x",
     "gulp-less": "4.0.x",
     "gulp-plumber": "1.2.x",
-    "gulp-postcss": "^8.0.0",
-    "gulp-posthtml": "^3.0.4",
     "gulp-sourcemaps": "2.6.x",
-    "posthtml-include": "^1.2.0",
+    "gulp-postcss": "8.0.x",
+    "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -39,8 +37,5 @@
   ],
   "engines": {
     "node": "8.15"
-  },
-  "dependencies": {
-    "editorconfig": "^0.15.3"
   }
 }

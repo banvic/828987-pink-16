@@ -7,16 +7,15 @@ var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include");
-
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([
+      autoprefixer()
+    ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
@@ -36,9 +35,3 @@ gulp.task("server", function () {
 });
 
 gulp.task("start", gulp.series("css", "server"));
-
-gulp.task("html", function () {
-  return gulp.src("*.html")
-    .pipe(posthtml([include()]))
-    .pipe(gulp.dest("/source/img"));
-  });
