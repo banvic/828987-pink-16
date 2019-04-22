@@ -53,3 +53,36 @@
     padding-left: 15px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .users-photos__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .users-photos__list-block {
+    width: 300px;
+    margin: 0;
+  }
+
+  .main-picture-block {
+    min-width: 660px;
+  }
+
+  .main-picture {
+    width: 100%;
+    height: auto;
+  }
+
+  .users-photos__list-block--last-article {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-picture-block {
+    min-width: 1000px;
+  }
+}

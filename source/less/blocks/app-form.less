@@ -8,3 +8,23 @@
   margin: 0 auto;
   padding: 50px 20px;
 }
+
+@media (min-width: @mobile-width) and (max-width: @tablet-width) {
+  .app-form__intro-text {
+    span {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .app-form__intro-text {
+    width: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app-form__intro-text {
+    width: 600px;
+  }
+}

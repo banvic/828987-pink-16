@@ -1,5 +1,29 @@
 body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
   background-color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+}
+
+@media (min-width: @mobile-width) {
+  body {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1000px;
+    margin: 0 auto;
+  }
 }
