@@ -13,26 +13,70 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  .picture {
-    padding-top: 20px;
-  }
+.users-photos__today-landscape {
+  position: relative;
+  top: 33px;
+  right: -70px;
+  width: 140px;
+  margin: 0 auto;
+  background-color: #d22856;
+  padding: 10px 0;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.users-photos__image {
+  padding-top: 20px;
+}
+
+.users-photos__span-block {
+  display: flex;
+  width: 280px;
+  background: #f2f2f2;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  color: #d22856;
+}
+
+.users-photos__span-block--floating-block {
+  display: flex;
+  width: auto;
+  background: #f2f2f2;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  color: #d22856;
+}
+
+.heart-icon {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.users-photos__user-article--main-article {
+  width: 100%;
+  padding-top: 20px;
+  line-height: 1.5;
+  background: #f2f2f2;
 
   span {
-    width: 280px;
-    background: #f2f2f2;
-    padding-top: 15px;
-    padding-bottom: 30px;
-    color: #d22856;
+    font-weight: bold;
+  }
 
-    .heart-icon {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+  dt {
+    padding-left: 15px;
+  }
+
+  dd {
+    margin: 0;
+    padding-left: 15px;
   }
 }
 
-.user-article {
+.users-photos__user-article {
   width: 280px;
   margin: 0;
   padding-top: 20px;
@@ -49,7 +93,7 @@
   }
 
   dd {
-    margin: 0;
+    margin: 0 auto;
     padding-left: 15px;
   }
 }
@@ -67,8 +111,26 @@
     margin: 0;
   }
 
+  .users-photos__today-landscape {
+    position: relative;
+    top: 90px;
+    right: -240px;
+  }
+
   .users-photos__list-block--main-picture-block {
     min-width: 660px;
+  }
+
+  .users-photos__user-article--main-article {
+    dt {
+      margin-left: 20px;
+    }
+
+    dd {
+      margin-left: 20px;
+      padding-bottom: 20px;
+      padding-right: 80px;
+    }
   }
 
   .users-photos__image--main-picture {
@@ -79,10 +141,26 @@
   .users-photos__list-block--last-article {
     width: 100%;
   }
+
+  .users-photos__span-block--floating-block {
+    float: right;
+    padding: 0;
+    width: auto;
+    margin: -80px 40px 0 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .users-photos__today-landscape {
+    position: relative;
+    right: -300px;
+  }
+
   .users-photos__list-block--main-picture-block {
     width: 100%;
+  }
+
+  .users-photos__span-block--floating-block {
+    margin: -60px 40px 0 0;
   }
 }
