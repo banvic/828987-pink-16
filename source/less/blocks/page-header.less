@@ -1,16 +1,40 @@
 .page-header {
-  margin: 0;
   width: auto;
+  margin: 0;
   background: #283645;
 }
 
 .page-header__head {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 25px;
-  border-bottom: 2px solid black;
 }
 
 .page-header__toggle {
   float: right;
   background: #283645;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__head {
+    padding: 40px 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    display: flex;
+  }
+
+  .page-header__head {
+    margin: 0;
+    width: 100px;
+    padding: 25px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
 }

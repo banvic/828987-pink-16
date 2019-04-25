@@ -1,5 +1,5 @@
 .start-app__app-download {
-  margin: 70px auto;
+  margin: 0 auto;
   padding: 30px 20px;
   background: #1d2631;
 }
@@ -20,8 +20,50 @@
 
 .start-app__text-description {
   margin: 0 auto;
-  color: #c3c5c8;
-  line-height: 2;
+  color: white;
+  line-height: 1.5;
   font-weight: 300;
   text-align: center;
+}
+
+.start-app__button {
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: @mobile-width) and (max-width: @tablet-width) {
+  .start-app__title {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .start-app {
+    position: absolute;
+    width: 350px;
+    margin-top: -420px;
+  }
+
+  .start-app__title {
+    margin: 0;
+    padding: 0 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    color: white;
+  }
+
+  .start-app__app-download {
+    background: none;
+  }
+
+  .start-app__text-description {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .start-app {
+    padding: 35px 100px;
+  }
 }
