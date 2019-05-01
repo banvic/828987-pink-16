@@ -1,23 +1,25 @@
-.app-interface__title {
-  text-align: center;
-  line-height: 2;
-  margin: 0 auto;
-  padding: 50px 35px;
-}
-
 .app-interface {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.app-interface__title {
+  width: 300px;
+  text-align: center;
+  line-height: 2.1;
+  margin: 0 auto;
+  padding: 34px 0 64px 0;
+}
+
 .app-interface__tools {
+  width: 240px;
   margin: 40px 0;
+  padding: 0 0 60px 0;
   display: flex;
   justify-content: space-around;
-  width: 280px;
+  align-items: center;
   list-style: none;
-  padding: 0;
 }
 
 .app-interface__button {
@@ -25,4 +27,19 @@
   border-color: #dddfe0;
   background: white;
   margin: 10px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .app-interface__title {
+    width: 500px;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app-interface__title {
+    padding-top: 80px;
+  }
 }
